@@ -513,7 +513,8 @@ mark,
 }
 
 .img-fluid {
-    max-width: 100%;
+    margin-top: 27px;
+    max-width: 60%;
     height: auto;
 }
 
@@ -6913,7 +6914,8 @@ button.bg-dark:focus {
 }
 
 .rounded-circle {
-    border-radius: 50% !important;
+    /* border-radius: 50% !important; */
+    border-radius: 10% !important;
 }
 
 .rounded-pill {
@@ -10402,7 +10404,8 @@ header.masthead .masthead-heading {
 .timeline:before {
     position: absolute;
     top: 0;
-    bottom: 0;
+    /* bottom: 0; */
+    bottom: 150px;
     left: 40px;
     width: 2px;
     margin-left: -1.5px;
@@ -10565,7 +10568,8 @@ header.masthead .masthead-heading {
         min-height: 170px;
     }
     .timeline>li .timeline-panel {
-        padding: 0 20px 20px 100px;
+        /* padding: 0 20px 20px 100px; */
+        padding: 0 20px 20px 0;
     }
     .timeline>li .timeline-image {
         width: 170px;

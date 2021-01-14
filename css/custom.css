@@ -87,6 +87,29 @@
 }
 
 
+/* About-us */
+
+.who-we-are {
+    margin-bottom: 150px;
+}
+
+
+/* .footer-stick {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+} */
+
+.about-us-page-section {
+    background: url('/assets/img/About-us.png')center no-repeat;
+    background-size: cover;
+}
+
+.order-img {
+    margin-left: 10px;
+}
+
+
 /* Terms and Conditions */
 
 .terms-container {
