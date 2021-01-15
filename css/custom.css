@@ -15,6 +15,10 @@
     width: 200px !important;
 }
 
+#mainNav .navbar-nav .nav-item .nav-link {
+    font-size: 16px;
+}
+
 .caret {
     border: none !important;
 }
@@ -91,12 +95,23 @@
     border-color: #dddddd;
 }
 
+.btn-primary {
+    background-color: #fed136;
+    border-color: #fed136;
+}
+
+.btn-primary:hover {
+    background-color: #ecba10;
+    border-color: #ecba10;
+}
+
+.footer {
+    font-size: 16px;
+    ;
+}
+
 
 /* About-us */
-
-.who-we-are {
-    margin-bottom: 150px;
-}
 
 
 /* .footer-stick {
@@ -112,6 +127,22 @@
 
 .order-img {
     margin-left: 10px;
+}
+
+.wcu-tile {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 6px solid #fed136;
+    border-radius: 70px;
+}
+
+.wcu-img {
+    height: 150px;
+    padding-bottom: 20px;
+}
+
+.wcu-text {
+    margin-bottom: 30px;
 }
 
 
@@ -135,4 +166,28 @@
     .masthead-subheading {
         font-size: 1rem !important;
     }
+}
+
+.section-location {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-color: rgba(254, 209, 54, 0.6);
+}
+
+.sign-up-link {
+    color: #ec3e20;
+}
+
+
+/* Top page - Who we are */
+
+.about-image {
+    padding-top: 300px;
+    /* padding-bottom: 50px; */
+    background: url('/assets/img/about/shutterstock_1020473356.png')center no-repeat;
+    background-size: cover;
+}
+
+.name-color {
+    color: #ec3e20;
 }
