@@ -86,6 +86,11 @@
     /* margin: 0 !important; */
 }
 
+.error .bootstrap-select .dropdown-toggle,
+.has-error .bootstrap-select .dropdown-toggle {
+    border-color: #dddddd;
+}
+
 
 /* About-us */
 
