@@ -181,6 +181,10 @@
 
 /* Top page - Who we are */
 
+.logo-img {
+    height: 50px !important;
+}
+
 .about-image {
     padding-top: 300px;
     /* padding-bottom: 50px; */

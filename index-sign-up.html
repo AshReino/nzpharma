@@ -31,7 +31,7 @@
         <nav class="navbar-1 navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
                 <div class="navbar-items">
-                    <a class="navbar-brand js-scroll-trigger" href="/index.html"><img src="assets/img/navbar-logo.svg" alt="" /></a>
+                    <a class="navbar-brand js-scroll-trigger" href="/index.html"><img class="logo-img" src="assets/img/navbar-logo.png" alt="" /></a>
                     <!-- <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars ml-1"></i>
@@ -87,14 +87,14 @@
                             <div class="form-group sign-up-input row">
                                 <label for="inputPassword" class="col-sm-4 col-form-label">Password *</label>
                                 <div class="col-sm-8">
-                                    <input type="password" class="form-control" id="inputPassword" placeholder="" required data-validation-required-message="Please enter your password">
+                                    <input type="password" class="form-control" id="password" placeholder="" required data-validation-required-message="Please enter your password">
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="form-group sign-up-input row">
                                 <label for="inputPasswordConfirmation" class="col-sm-4 col-form-label">Confirm Password *</label>
                                 <div class="col-sm-8">
-                                    <input type="password" class="form-control" id="inputPasswordConfirmation" placeholder="" required data-validation-required-message="Please confirm your password">
+                                    <input type="password" class="form-control" id="passwordConfirmation" placeholder="" required data-validation-required-message="Please confirm your password">
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
@@ -210,63 +210,63 @@
                             <div class="form-group sign-up-input row">
                                 <div class="col-sm-4"></div>
                                 <div class="col-sm-8">
-                                    <input class="" id="bill-address-checkbox" type="checkbox" placeholder="" />
-                                    <label for="bill-address-checkbox" class="col-form-label">Use Shipping Address above</label>
+                                    <input class="" id="billAddressCheckbox" type="checkbox" placeholder="" />
+                                    <label for="billAddressCheckbox" class="col-form-label">Use Shipping Address above</label>
                                 </div>
                             </div>
                             <div class="form-group sign-up-input row">
-                                <label for="attentionTo-bill" class="col-sm-4 col-form-label">Attention To (on label)</label>
+                                <label for="attentionToBill" class="col-sm-4 col-form-label">Attention To (on label)</label>
                                 <div class="col-sm-8">
-                                    <input class="form-control" id="attentionTo-bill" type="text" placeholder="" />
+                                    <input class="form-control" id="attentionToBill" type="text" placeholder="" />
                                 </div>
                             </div>
                             <div class="form-group sign-up-input row">
-                                <label for="street1-bill" class="col-sm-4 col-form-label">Street 1</label>
+                                <label for="street1Bill" class="col-sm-4 col-form-label">Street 1</label>
                                 <div class="col-sm-8">
-                                    <input class="form-control" id="street1-bill" type="text" placeholder="" />
+                                    <input class="form-control" id="street1Bill" type="text" placeholder="" />
                                 </div>
                             </div>
                             <div class="form-group sign-up-input row">
-                                <label for="street2-bill" class="col-sm-4 col-form-label">Street 2</label>
+                                <label for="street2Bill" class="col-sm-4 col-form-label">Street 2</label>
                                 <div class="col-sm-8">
-                                    <input class="form-control" id="street2-bill" type="text" placeholder="" />
+                                    <input class="form-control" id="street2Bill" type="text" placeholder="" />
                                 </div>
                             </div>
                             <div class="form-group sign-up-input row">
-                                <label for="suburb-bill" class="col-sm-4 col-form-label">Suburb</label>
+                                <label for="suburbBill" class="col-sm-4 col-form-label">Suburb</label>
                                 <div class="col-sm-8">
-                                    <input class="form-control" id="suburb-bill" type="text" placeholder="" />
+                                    <input class="form-control" id="suburbBill" type="text" placeholder="" />
                                 </div>
                             </div>
                             <div class="form-group sign-up-input row">
-                                <label for="postcode-bill" class="col-sm-4 col-form-label">Postcode</label>
+                                <label for="postcodeBill" class="col-sm-4 col-form-label">Postcode</label>
                                 <div class="col-sm-8">
-                                    <input class="form-control" id="postcode-bill" type="postal" placeholder="" />
+                                    <input class="form-control" id="postcodeBill" type="postal" placeholder="" />
                                 </div>
                             </div>
                             <div class="form-group sign-up-input row">
-                                <label for="country-bill" class="col-sm-4 col-form-label">Country</label>
+                                <label for="countryBill" class="col-sm-4 col-form-label">Country</label>
                                 <div class="col-sm-8">
-                                    <select class="form-control selectpicker countrypicker" data-live-search="true" data-default="United States" data-flag="true" id="country-bill"></select>
+                                    <select class="form-control selectpicker countrypicker" data-live-search="true" data-default="United States" data-flag="true" id="countryBill"></select>
                                 </div>
                             </div>
                             <div class="form-group sign-up-input row">
-                                <label for="state-bill" class="col-sm-4 col-form-label">State</label>
+                                <label for="stateBill" class="col-sm-4 col-form-label">State</label>
                                 <div class="col-sm-8">
-                                    <input class="form-control" id="state-bill" type="postal" placeholder="" />
+                                    <input class="form-control" id="stateBill" type="postal" placeholder="" />
                                 </div>
                             </div>
                             <div class="form-group sign-up-input row">
                                 <div class="col-sm-4"></div>
                                 <div class="col-sm-8">
-                                    <input class="" id="mailing-list-checkbox" type="checkbox" placeholder="" />
-                                    <label for="mailing-list-checkbox" class="col-form-label">Would you like to join our mailing list?</label>
+                                    <input class="" id="mailingListCheckbox" type="checkbox" placeholder="" />
+                                    <label for="mailingListCheckbox" class="col-form-label">Would you like to join our mailing list?</label>
                                 </div>
                             </div>
                             <div class="form-group sign-up-input row">
-                                <label for="found-us" class="col-sm-4 col-form-label">How did you find us?</label>
+                                <label for="foundUs" class="col-sm-4 col-form-label">How did you find us?</label>
                                 <div class="col-sm-8">
-                                    <select class="form-control selectpicker select-picker-custom" id="found-us">
+                                    <select class="form-control selectpicker select-picker-custom" id="foundUs">
                                     <option>Please Select</option>
                                     <option>Referral</option>
                                     <option>Online</option>
@@ -334,7 +334,7 @@
     </script>
     <!-- Contact form JS-->
     <script src="assets/mail/jqBootstrapValidation.js"></script>
-    <script src="assets/mail/contact_me.js"></script>
+    <script src="assets/mail/sign-up.js"></script>
 </body>
 
 </html>
