@@ -13,7 +13,7 @@ if(empty($_POST['email'])      ||
     echo "No arguments Provided!";
     return false;
    }
-$email_address = strip_tags(htmlspecialchars($_POST['email']));  
+$email = strip_tags(htmlspecialchars($_POST['email']));  
 $password =strip_tags(htmlspecialchars($_POST['password']));
 $passwordConfirmation =strip_tags(htmlspecialchars($_POST['passwordConfirmation']));
 $tradingName =strip_tags(htmlspecialchars($_POST['tradingName']));
@@ -48,7 +48,7 @@ $to = 'kseniia.kandaurova@gmail.com'; // Add your email address in between the '
 $email_subject = "Website Sign Up Form:  $tradingName";
 $email_body = "You have received a new message from your website sign up form.\n\n"."Here are the details:\n\nEmail: $email\n\nPassword: $password\n\nPassword confirmation: $passwordConfirmation\n\n Trading name: $tradingName\n\nRegistered name: $registeredName\n\nTitle: $title\n\nFirst name: $firstName\n\nLast name: $lastName\n\nPosition: $position\n\nPhone: $phone\n\nMobile: $mobile\n\nFax: $fax\n\nAttention to: $attentionTo\n\nStreet1: $street1\n\nStreet2: $street2\n\nSuburb: $suburb\n\nPostcode: $postcode\n\nCountry: $country\n\nState: $state\n\nBilling address same as shipping: $billAddressCheckbox\n\nAttention to (bill): $attentionToBill\n\nStreet1 (bill): $street1Bill\n\nStreet2 (bill): $street2Bill\n\nSuburb (bill): $suburbBill\n\nPostcode (bill): $postcodeBill\n\nCountry (bill): $countryBill\n\nState (bill): $stateBill\n\nMailing list: $mailingListCheckbox\n\nFound us: $foundUs";
 $headers = "From: noreply@yourdomain.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
-$headers .= "Reply-To: $email_address";   
+$headers .= "Reply-To: $email";   
 mail($to,$email_subject,$email_body,$headers);
 return true;         
 ?>
