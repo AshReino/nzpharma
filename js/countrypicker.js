@@ -993,8 +993,8 @@ $(function () {
             
             //for each build list with flag
             $.each(countries, function (index, country) {
-                var flagIcon = "css/flags/" + country.code + ".png";
-                countryList += "<option data-country-code='" + country.code + "' data-tokens='" + country.code + " " + country.name + "' style='padding-left:25px; background-position: 4px 7px; background-image:url(" + flagIcon + ");background-repeat:no-repeat;' value='" + country.name + "'>" + country.name + "</option>";
+                var flagIcon = "/css/flags/" + country.code.toLowerCase() + ".png";
+                countryList += "<option data-country-code='" + country.code.toLowerCase() + "' data-tokens='" + country.code + " " + country.name + "' style='padding-left:25px; background-position: 4px 7px; background-image:url(" + flagIcon + ");background-repeat:no-repeat;' value='" + country.name + "'>" + country.name + "</option>";
             });
 
             //add flags to button
@@ -1002,7 +1002,7 @@ $(function () {
                 var button = $(this).closest('.btn-group').children('.btn');
                 button.hide();
                 var def = $(this).find(':selected').data('country-code');
-                var flagIcon = "css/flags/" + def + ".png";
+                var flagIcon = "/css/flags/" + def.toLowerCase() + ".png";
                 button.css("background-size", '20px');
                 button.css("background-position", '10px 9px');
                 button.css("padding-left", '40px');
@@ -1015,7 +1015,7 @@ $(function () {
             countryInput.eq(i).on('change', function () {
                 button = $(this).closest('.btn-group').children('.btn');
                 def = $(this).find(':selected').data('country-code');
-                flagIcon = "css/flags/" + def + ".png";
+                flagIcon = "/css/flags/" + def.toLowerCase() + ".png";
                 button.css("background-size", '20px');
                 button.css("background-position", '10px 9px');
                 button.css("padding-left", '40px');
@@ -1028,7 +1028,7 @@ $(function () {
             
             //for each build list without flag
             $.each(countries, function (index, country) {
-                countryList += "<option data-country-code='" + country.code + "' data-tokens='" + country.code + " " + country.name + "' value='" + country.name + "'>" + country.name + "</option>";
+                countryList += "<option data-country-code='" + country.code.toLowerCase() + "' data-tokens='" + country.code + " " + country.name + "' value='" + country.name + "'>" + country.name + "</option>";
             });
             
             
