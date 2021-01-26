@@ -13,7 +13,7 @@ if(empty($_POST['email'])      ||
     echo "No arguments Provided!";
     return false;
    }
-$email = strip_tags(htmlspecialchars($_POST['email']));  
+$email_address = strip_tags(htmlspecialchars($_POST['email']));  
 $password =strip_tags(htmlspecialchars($_POST['password']));
 $passwordConfirmation =strip_tags(htmlspecialchars($_POST['passwordConfirmation']));
 $tradingName =strip_tags(htmlspecialchars($_POST['tradingName']));
