@@ -15,14 +15,6 @@
 }
 
 
-/* Main/Contact us */
-
-
-/* .contact-section {
-    background-color: grey;
-} */
-
-
 /* Sign-up */
 
 .sign-up-page {
@@ -42,6 +34,24 @@
 
 #mainNav .navbar-nav .nav-item .nav-link {
     font-size: 16px;
+}
+
+.navbar-nav-sign-up {
+    padding-top: 25px;
+    flex-direction: row;
+}
+
+.navbar-nav>li>a:hover {
+    border: none;
+}
+
+.sign-up-nav {
+    min-height: 100px;
+    align-items: center;
+}
+
+.navbar-brand {
+    min-height: 100px !important;
 }
 
 .caret {
@@ -110,7 +120,7 @@
 }
 
 .navbar-nav {
-    flex-direction: row !important;
+    /* flex-direction: row !important; */
     float: right;
     /* margin: 0 !important; */
 }
@@ -280,7 +290,7 @@
 /* Top page - Who we are */
 
 .logo-img {
-    height: 50px !important;
+    height: 100px !important;
 }
 
 .about-image {
