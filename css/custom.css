@@ -1,3 +1,14 @@
+html {
+    position: relative;
+    min-height: 98%;
+}
+
+body {
+    margin-bottom: 70px;
+    /* Margin bottom by footer height */
+}
+
+
 /* Main/ Why Choose Us */
 
 .why-us-img {
@@ -141,7 +152,6 @@
 
 .footer {
     font-size: 16px;
-    ;
 }
 
 
@@ -183,11 +193,11 @@
 /* Contact us */
 
 .contact-us-section {
-    margin-bottom: 100px;
-    padding-bottom: 50px;
+    /* margin-bottom: 100px; */
+    /* padding-bottom: 50px; */
     background: url('/assets/img/About-us.png')center no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 91vh;
 }
 
 .contacts-header {
@@ -208,9 +218,10 @@
 }
 
 .footer-stick-contact {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 70px;
+    line-height: 50px;
     background-color: white;
     bottom: 0px;
 }
